@@ -92,12 +92,6 @@ public class GameManager : MonoBehaviour
             hasPassedLevel3 = true;
         }
 
-        if (Input.GetKey(KeyCode.Space) && gameStatus == GameStatus.inMenu)
-        {
-            gameStatus = GameStatus.gameStart;
-        }
-
-
 
         if (gameStatus == GameStatus.inMenu)
         {

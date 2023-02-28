@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
             enemiesKilled = new int[numberOfEnemies];
             randomDropRateCollectible = new int[numberOfEnemies];
             isCollected = new bool[numberOfEnemies];
-            Debug.Log(enemiesKilled.Length);
+            //Debug.Log(enemiesKilled.Length);
         }
         for (int i = 0; i < randomDropRateCollectible.Length; i++)
         {

@@ -205,7 +205,7 @@ public class EnemyController : MonoBehaviour
        
         yield return new WaitUntil(() => animDeath.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
 
-        Debug.Log("enemy controller " + (enemyNumber - 1));
+        //Debug.Log("enemy controller " + (enemyNumber - 1));
         GameManager.gameManager.enemiesKilled[enemyNumber-1]++;
         if ((!GameManager.gameManager.isCollected[enemyNumber - 1]) && GameManager.gameManager.enemiesKilled[enemyNumber - 1] >= GameManager.gameManager.randomDropRateCollectible[enemyNumber - 1])
         {

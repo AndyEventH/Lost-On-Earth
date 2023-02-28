@@ -711,7 +711,7 @@ MonoBehaviour:
   shotPos: {fileID: 6826197049446575097}
   takeDmgOnCollision: 100
   takeDmgBullet: 50
-  _healthBar: {fileID: 2798616895755028280}
+  _healthBar: {fileID: 6645582274059202889}
   enemyNumber: 1
   enemySource: {fileID: 7974609606265060801}
   explodeDeath: {fileID: 8300000, guid: b125274ef7dff48a1bab03a513f2b73e, type: 3}
@@ -823,7 +823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4943491250560302951}
   - component: {fileID: 2861234308686876787}
-  - component: {fileID: 2798616895755028280}
+  - component: {fileID: 6645582274059202889}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2798616895755028280
+--- !u!114 &6645582274059202889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

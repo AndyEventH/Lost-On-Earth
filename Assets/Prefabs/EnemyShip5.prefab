@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5656756534608891855}
   - component: {fileID: 1399998432482723974}
-  - component: {fileID: 7945662899944363455}
+  - component: {fileID: 9048383665127643301}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7945662899944363455
+--- !u!114 &9048383665127643301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -382,7 +382,7 @@ MonoBehaviour:
   shotPos: {fileID: 4807751695592674544}
   takeDmgOnCollision: 100
   takeDmgBullet: 100
-  _healthBar: {fileID: 7945662899944363455}
+  _healthBar: {fileID: 9048383665127643301}
   enemyNumber: 2
   enemySource: {fileID: 2920885729659833543}
   explodeDeath: {fileID: 8300000, guid: b125274ef7dff48a1bab03a513f2b73e, type: 3}
@@ -798,7 +798,7 @@ Animator:
   m_GameObject: {fileID: 4807751695809003195}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e584b8a963e444f2785773ff6193bd29, type: 2}
+  m_Controller: {fileID: 9100000, guid: 320b90297e77e454b8163f004991d919, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

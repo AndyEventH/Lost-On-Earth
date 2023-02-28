@@ -37,7 +37,7 @@ public class EnvironmentManager : MonoBehaviour
 
     public void PassLevel2() // collectiblesAchieved == 1
     {
-        Debug.Log("sono arrivato qui");
+        //Debug.Log("sono arrivato qui");
         //in = true , out = false
         LAYER0_LVL2.ExecuteFadeIN();
         LAYER0_LVL1.ExecuteFadeOUT();

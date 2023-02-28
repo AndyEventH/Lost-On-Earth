@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip winSound;
     [SerializeField] AudioClip lossSound;
 
+    [SerializeField] public Text[] ObjTxt;
     public enum GameStatus
     {
         gameStart,
@@ -63,6 +64,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < randomDropRateCollectible.Length; i++)
         {
             randomDropRateCollectible[i] = Random.Range(minEnemiesKilledCollectible, maxEnemiesKilledCollectible); ;
+            ObjTxt[i].text = randomDropRateCollectible[i].ToString();
         }
         //check if gameManager exists
         if (gameManager != null && gameManager != this)

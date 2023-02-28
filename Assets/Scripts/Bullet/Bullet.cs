@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
     private float cameraSize;
     private float bulletSize;
 
-    private float safetyDestroy = 10f;
+    //private float safetyDestroy = 10f;
     // Start is called before the first frame update
     void Start()
     {

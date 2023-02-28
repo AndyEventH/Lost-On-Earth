@@ -8,20 +8,17 @@ public class SliderBar : MonoBehaviour
 {
     [SerializeField] private bool isEnemy;
     [SerializeField]private Transform whoIsParent;
-    Slider _Slider;
+    [SerializeField]private Slider _Slider;
     
     [SerializeField] private Vector3 Offset;
-    public void Start()
-    {
-        _Slider = GetComponent<Slider>();
-        if (isEnemy)
-        {
-            _Slider.transform.position = Camera.main.WorldToScreenPoint(whoIsParent.position + Offset);
-        }
-    }
+    
 
     public void SetMaxSlider(int _value)
     {
+        if (isEnemy)
+        {
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        }
         _Slider.maxValue = _value;
         _Slider.value = _value;
     }

@@ -33,7 +33,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 1212039733793293658}
   - component: {fileID: 6508734737726836668}
   - component: {fileID: 6600962975291885734}
+  - component: {fileID: 7192719314921519226}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -286,6 +287,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7192719314921519226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6089946490857347095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63059fed7afa04c36ac4f4d5e0899ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnemy: 1
+  whoIsParent: {fileID: 6826197050361554183}
+  _Slider: {fileID: 2861234308686876787}
+  Offset: {x: 0, y: -1.5, z: 0}
 --- !u!1 &6826197049394479538
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +728,7 @@ MonoBehaviour:
   shotPos: {fileID: 6826197049446575097}
   takeDmgOnCollision: 100
   takeDmgBullet: 50
-  _healthBar: {fileID: 6645582274059202889}
+  _healthBar: {fileID: 7192719314921519226}
   enemyNumber: 1
   enemySource: {fileID: 7974609606265060801}
   explodeDeath: {fileID: 8300000, guid: b125274ef7dff48a1bab03a513f2b73e, type: 3}
@@ -823,14 +840,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4943491250560302951}
   - component: {fileID: 2861234308686876787}
-  - component: {fileID: 6645582274059202889}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4943491250560302951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -903,18 +919,3 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6645582274059202889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7241813061805256202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63059fed7afa04c36ac4f4d5e0899ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnemy: 1
-  whoIsParent: {fileID: 6826197050361554183}
-  Offset: {x: 0, y: -1.5, z: 0}

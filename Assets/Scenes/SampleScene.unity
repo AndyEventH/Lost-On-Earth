@@ -4614,6 +4614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnemy: 0
   whoIsParent: {fileID: 0}
+  _Slider: {fileID: 410350520}
   Offset: {x: 0, y: 0, z: 0}
 --- !u!1 &412631055
 GameObject:
@@ -9283,6 +9284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEnemy: 0
   whoIsParent: {fileID: 0}
+  _Slider: {fileID: 900837135}
   Offset: {x: 0, y: 0, z: 0}
 --- !u!1 &907269653
 GameObject:

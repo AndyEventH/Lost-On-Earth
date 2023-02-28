@@ -33,7 +33,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -177,7 +177,7 @@ MonoBehaviour:
   shotPos: {fileID: 4423713366071676833}
   takeDmgOnCollision: 100
   takeDmgBullet: 15
-  _healthBar: {fileID: 8396310845625895082}
+  _healthBar: {fileID: 7160011250522801736}
   enemyNumber: 3
   enemySource: {fileID: 7559780158992156615}
   explodeDeath: {fileID: 8300000, guid: b125274ef7dff48a1bab03a513f2b73e, type: 3}
@@ -648,14 +648,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3729662041242580439}
   - component: {fileID: 8482120474136409634}
-  - component: {fileID: 8396310845625895082}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3729662041242580439
 RectTransform:
   m_ObjectHideFlags: 0
@@ -728,21 +727,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8396310845625895082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7108784298615184744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63059fed7afa04c36ac4f4d5e0899ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnemy: 1
-  whoIsParent: {fileID: 4423713364888387935}
-  Offset: {x: 0, y: -1.5, z: 0}
 --- !u!1 &7318615785389550812
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +739,7 @@ GameObject:
   - component: {fileID: 1597627992473872164}
   - component: {fileID: 7546111588663430964}
   - component: {fileID: 868385282496106610}
+  - component: {fileID: 7160011250522801736}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -843,6 +828,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7160011250522801736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318615785389550812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63059fed7afa04c36ac4f4d5e0899ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnemy: 1
+  whoIsParent: {fileID: 4423713364888387935}
+  _Slider: {fileID: 8482120474136409634}
+  Offset: {x: 0, y: -1.5, z: 0}
 --- !u!1 &7659399138298563426
 GameObject:
   m_ObjectHideFlags: 0

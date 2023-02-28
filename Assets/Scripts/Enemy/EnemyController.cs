@@ -67,6 +67,7 @@ public class EnemyController : MonoBehaviour
         cameraSize = Camera.main.orthographicSize;
         cam = GameObject.Find("CM vcam1");
         //StartCoroutine(RandomPositionMovement());
+        _healthBar.SetMaxSlider(100);
     }
 
     // Update is called once per frame
@@ -207,8 +208,11 @@ public class EnemyController : MonoBehaviour
 
         //Debug.Log("enemy controller " + (enemyNumber - 1));
         GameManager.gameManager.enemiesKilled[enemyNumber-1]++;
-        GameManager.gameManager.ObjTxt[enemyNumber - 1].text = (GameManager.gameManager.randomDropRateCollectible[enemyNumber - 1]-GameManager.gameManager.enemiesKilled[enemyNumber - 1]).ToString();
-        
+        int temp = GameManager.gameManager.randomDropRateCollectible[enemyNumber - 1] - GameManager.gameManager.enemiesKilled[enemyNumber - 1];
+        if (temp >= 0)
+        {
+            GameManager.gameManager.ObjTxt[enemyNumber - 1].text = (temp.ToString());
+        }
         //leftObjTxt.text = enemiesKilled[enemyNumber - 1];
         if ((!GameManager.gameManager.isCollected[enemyNumber - 1]) && GameManager.gameManager.enemiesKilled[enemyNumber - 1] >= GameManager.gameManager.randomDropRateCollectible[enemyNumber - 1])
         {

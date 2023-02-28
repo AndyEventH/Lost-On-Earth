@@ -208,11 +208,13 @@ public class EnemyController : MonoBehaviour
         //Debug.Log("enemy controller " + (enemyNumber - 1));
         GameManager.gameManager.enemiesKilled[enemyNumber-1]++;
         GameManager.gameManager.ObjTxt[enemyNumber - 1].text = (GameManager.gameManager.randomDropRateCollectible[enemyNumber - 1]-GameManager.gameManager.enemiesKilled[enemyNumber - 1]).ToString();
+        
         //leftObjTxt.text = enemiesKilled[enemyNumber - 1];
         if ((!GameManager.gameManager.isCollected[enemyNumber - 1]) && GameManager.gameManager.enemiesKilled[enemyNumber - 1] >= GameManager.gameManager.randomDropRateCollectible[enemyNumber - 1])
         {
             Instantiate(collPrefab, shotPos.transform.position, newRotation, GameManager.gameManager.collectibleContainer.transform);
             GameManager.gameManager.isCollected[enemyNumber - 1] = true;
+            GameManager.gameManager.ObjTxt[enemyNumber - 1].text = "";
             //GameManager.gameManager.updateNeededCollectibles();
         }
         Destroy(gameObject);
